@@ -13,13 +13,14 @@ html {
 }
 
 $background-color: rgb(255, 245, 253);
+$radius: 20px;
 form {
     margin: 0;
     text-align: center;
     padding: 30px;
     position: absolute;
     border: 2px solid black;
-    border-radius: 20px;
+    border-radius: $radius;
     height: 550px;
     width: 350px;
     display: flex;
@@ -35,6 +36,6 @@ form {
         padding: 20px;
         background-color: $background-color;
         border: none;
-        border-radius: 20px;
+        border-radius: $radius;
     }
 }
