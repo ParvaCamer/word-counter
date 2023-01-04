@@ -4,9 +4,19 @@ function wordCount(value) {
     return value.split(/\s+/).length;
 }
 
-let input = document.getElementById('text-input');
-let word = document.getElementById('word-count');
+function letterCount(value) {
+    let letterCount = 0;
+    for (let i = 0;i < value.length; i++) {
+        letterCount++;
+    }
+    return letterCount;
+}
 
-input.addEventListener('input', function() {
-    word.textContent = wordCount(input.value);
+let text = document.getElementById('textarea');
+let word = document.getElementById('word-count');
+let letter = document.getElementById('letter-count');
+
+text.addEventListener('input', function() {
+    word.textContent = wordCount(text.value);
+    letter.textContent = letterCount(text.value);
 })
