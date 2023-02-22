@@ -7,7 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Word counter</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto+Slab:wght@100;300;700&family=Ubuntu&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -16,6 +20,10 @@
         <textarea id="textarea" rows="8" name="name" placeholder="Write your text here..."></textarea>
         <p>Word count : <span id="word-count">0</span></p>
         <p>Letter count : <span id="letter-count">0</span></p>
+        <div class="button">
+            <button id="start">Start talking</button>
+            <button id="stop">Stop recording</button>
+        </div>
     </form>
     <script src="script.js"></script>
 </body>

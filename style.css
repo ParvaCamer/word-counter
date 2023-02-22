@@ -7,8 +7,10 @@
 }
 
 html {
-  font-family: Roboto;
-  font-size: 1.1rem;
+  font-family: "Oswald", sans-serif;
+  font-family: "Roboto Slab", serif;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1rem;
   box-sizing: border-box;
 }
 
@@ -27,14 +29,32 @@ form {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgb(255, 245, 253);
+  background-color: rgb(243, 208, 237);
 }
 form textarea {
   box-sizing: border-box;
   padding: 20px;
-  background-color: rgb(255, 245, 253);
+  background-color: rgb(243, 208, 237);
   border: none;
   border-radius: 20px;
+}
+form .button button {
+  width: 120px;
+  height: 40px;
+  padding: 10px 5px;
+  border-radius: 20px;
+  background-color: rgba(132, 99, 126, 0.487);
+  cursor: pointer;
+  position: relative;
+}
+form .button button:hover {
+  background-color: rgba(188, 94, 170, 0.487);
+}
+form .button button:active {
+  bottom: -5px;
+}
+form .button button.listening {
+  background-color: rgba(224, 44, 194, 0.487);
 }
 
 /*# sourceMappingURL=style.css.map */

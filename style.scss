@@ -7,13 +7,16 @@
 }
 
 html {
-    font-family: Roboto;
-    font-size: 1.1rem;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
     box-sizing: border-box;
 }
 
-$background-color: rgb(255, 245, 253);
+$background-color: rgb(243, 208, 237);
 $radius: 20px;
+
 form {
     margin: 0;
     text-align: center;
@@ -37,5 +40,29 @@ form {
         background-color: $background-color;
         border: none;
         border-radius: $radius;
+    }
+
+    .button {
+        button {
+            width: 120px;
+            height: 40px;
+            padding: 10px 5px;
+            border-radius: $radius;
+            background-color: rgba(132, 99, 126, 0.487);
+            cursor: pointer;
+            position: relative;
+
+            &:hover {
+                background-color: rgba(188, 94, 170, 0.487);
+            }
+
+            &:active {
+                bottom: -5px;
+            }
+
+            &.listening {
+                background-color: rgba(224, 44, 194, 0.487);
+            }
+        }
     }
 }
